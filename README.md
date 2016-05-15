@@ -7,7 +7,7 @@ The provided email parser is based on Mime4j (https://james.apache.org/mime4j/in
 
 Add the following maven dependencies to your project:
 
-`
+```
 dependencies {
     compile([group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
             [group: 'javax.mail', name: 'mail', version: '1.4.7'],
@@ -22,10 +22,10 @@ dependencies {
             ['commons-collections:commons-collections:3.2.2']
     )
     }
-`
+```
 
 Sample code :
-`
+```
 ContentHandler contentHandler = new CustomContentHandler();
 
 MimeConfig mime4jParserConfig = new MimeConfig();
@@ -39,7 +39,7 @@ InputStream mailIn = 'Provide email mime stream here';
 mime4jParser.parse(mailIn);
 
 Email email = ((CustomContentHandler) contentHandler).getEmail();
-`
+```
 
  The 'email' object provides the logical email entities via convenience methods now.
 
