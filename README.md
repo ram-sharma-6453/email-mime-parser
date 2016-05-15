@@ -19,7 +19,7 @@ dependencies {
             [group: 'commons-configuration', name: 'commons-configuration', version: '1.10'],
             [group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'],
             [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'],
-            ['commons-collections:commons-collections:3.2.2']
+            [group: 'commons-collections', name: 'commons-collections', version: '3.2.2']
     )
     }
 ```
