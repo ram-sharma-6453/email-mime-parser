@@ -5,7 +5,7 @@ The provided email parser is based on Mime4j (https://james.apache.org/mime4j/in
 
 **Usage**
 
-Add the following maven dependencies to your project:
+Add the following dependencies to your project:
 
 ```
 dependencies {
