@@ -24,7 +24,7 @@ dependencies {
     }
 ```
 
-Sample code :
+**Sample code :**
 ```
 ContentHandler contentHandler = new CustomContentHandler();
 
@@ -43,7 +43,7 @@ Email email = ((CustomContentHandler) contentHandler).getEmail();
 
  The 'email' object provides the logical email entities via convenience methods now.
 
- For more info check the test case file 'ParserTest.java'
+ For more info check the test case file **'ParserTest.java'**
 
 
 
