@@ -105,17 +105,6 @@ public class EmailVerificationTest {
         Assert.assertEquals(email.getFromEmailHeaderValue(), null);
     }
 
-    @Test
-    public void assertMissingShardCodeHeader() throws MimeException, IOException {
-        Email email = getParsedMailWithMissingHeaders();
-        Assert.assertEquals(email.getShardCodeEmailHeaderValue(), null);
-    }
-
-    @Test
-    public void assertMissingJobIDHeader() throws MimeException, IOException {
-        Email email = getParsedMailWithMissingHeaders();
-        Assert.assertEquals(email.getJobIDEmailHeaderValue(), null);
-    }
 
     private Email getParsedMailWithMissingHeaders() throws MimeException, IOException {
         ContentHandler contentHandler = getContentHandler();

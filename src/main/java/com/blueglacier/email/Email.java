@@ -140,55 +140,7 @@ public class Email {
 		return null;
 	}
 	
-	public String getJobIDEmailHeaderValue(){
-		Field jobID = header.getField("X-jobID");	
-		if (jobID != null) {
-			return jobID.getBody();
-		}
-		return null;
-	}
-	
-	public String getShardCodeEmailHeaderValue(){
-		Field shardCode = header.getField("X-shardCode");	
-		if (shardCode != null) {
-			return shardCode.getBody();
-		}
-		return null;
-	}	
-	
-	public String getEmailVirusInfectedHeaderValue(){
-		Field antiVirusInfoField = header.getField("X-Amavis-Alert");	
-		if (antiVirusInfoField != null) {
-			return antiVirusInfoField.getBody();
-		}
-		return null;
-	}
-	
-	public String getEmailSpamScoreHeaderValue(){
-		Field spamScoreField = header.getField("X-Spam-Score");	
-		if (spamScoreField != null) {
-			return spamScoreField.getBody();
-		}
-		return null;
-	}
-	
-	public String getEmailSpamStatusHeaderValue(){
-		Field spamStatusField = header.getField("X-Spam-Status");	
-		if (spamStatusField != null) {
-			return spamStatusField.getBody();
-		}
-		return null;
-	}
-	
-	public String getEmailPrinterIdentityHeaderValue(){
-		Field printerIdentityField = header.getField("X-printerIdentifier");	
-		if (printerIdentityField != null) {
-			return printerIdentityField.getBody();
-		}
-		return null;
-	}
-	
-	private void addAttachments(BodyDescriptor bd, InputStream is) {		
+	private void addAttachments(BodyDescriptor bd, InputStream is) {
 	   attachments.add(new EmailAttachment(bd,is));
 	   LOGGER.info("Email attachment identified");
 	}
@@ -417,29 +369,5 @@ public class Email {
 	
 	private InputStream concatInputStream(InputStream source, InputStream destination) throws IOException{		
 		return new SequenceInputStream(destination, source);		
-	}	
-	
-	public boolean getPrinterValidationCompletedHeaderValue() throws HeaderNotFoundException {
-		Field printerValidationCompleted = header.getField("X-printerValidationCompleted");
-		if (printerValidationCompleted != null) {
-			return Boolean.valueOf(printerValidationCompleted.getBody());
-		}
-		throw new HeaderNotFoundException("Header X-printerValidationCompleted not found");
 	}
-	
-	public String getEmailFilterLeavingTime() throws HeaderNotFoundException {
-		Field emailFilteredTime = header.getField("X-emailFilterLeavingTime");	
-		if (emailFilteredTime != null) {
-			return emailFilteredTime.getBody();
-		}
-		throw new HeaderNotFoundException("Header X-emailFilterLeavingTime not found");
-	}
-
-    public String getEmailFilterArrivalTime() throws HeaderNotFoundException {
-        Field emailFilterArrivalTime = header.getField("X-emailFilterArrivalTime");
-        if (emailFilterArrivalTime != null) {
-            return emailFilterArrivalTime.getBody();
-        }
-        throw new HeaderNotFoundException("Header X-emailFilterArrivalTime not found");
-    }
 }
