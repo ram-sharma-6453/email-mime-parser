@@ -1,0 +1,165 @@
+Received: from localhost (localhost [127.0.0.1])
+        by ip-10-116-233-32.ec2.internal with SMTP (SubEthaSMTP 3.1.6)
+        for archive-quarantine;
+        Mon, 13 Feb 2012 04:32:11 -0500 (EST)
+X-Envelope-From: <ram.sharma.6453@aol.com>
+X-Envelope-To: <cp_user@dev1.cpgtest.ostinet.net>
+X-Envelope-To-Blocked: 
+X-Quarantine-ID: <8-y2MIg6dNVc>
+X-Spam-Flag: NO
+X-Spam-Score: -5.009
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.009 tag=-999 tag2=6.9 kill=6.9
+	tests=[HTML_MESSAGE=0.001, RCVD_IN_DNSWL_HI=-5,
+	T_RP_MATCHES_RCVD=-0.01] autolearn=ham
+X-Spam-Report:
+ * -5.0 RCVD_IN_DNSWL_HI RBL: Sender listed at http://www.dnswl.org/, high
+ *      trust
+ *      [15.201.24.20 listed in list.dnswl.org]
+ * -0.0 T_RP_MATCHES_RCVD Envelope sender domain matches handover relay
+ *      domain
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+Received: from dev1.cpgtest.ostinet.net ([127.0.0.1])
+	by localhost (dev1.cpgtest.ostinet.net [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id 8-y2MIg6dNVc for <cp_user@dev1.cpgtest.ostinet.net>;
+	Mon, 13 Feb 2012 04:32:05 -0500 (EST)
+Received: from g4t0017.houston.hp.com (g4t0017.houston.hp.com [15.201.24.20])
+	by dev1.cpgtest.ostinet.net (Postfix) with ESMTPS id 064CE1A44DC
+	for <cp_user@dev1.cpgtest.ostinet.net>; Mon, 13 Feb 2012 04:32:04 -0500 (EST)
+Authentication-Results: dev1.cpgtest.ostinet.net; sender-id=none header.from=ram.sharma.6453@aol.com; spf=none smtp.mfrom=ram.sharma.6453@aol.com
+X-DKIM: OpenDKIM Filter v2.1.3 dev1.cpgtest.ostinet.net 064CE1A44DC
+Authentication-Results: dev1.cpgtest.ostinet.net; dkim=none (no signature);
+	dkim-adsp=none
+Received: from G2W1953G.americas.hpqcorp.net (gvt0525.austin.hp.com [16.238.8.185])
+	(using TLSv1 with cipher AES128-SHA (128/128 bits))
+	(No client certificate requested)
+	by g4t0017.houston.hp.com (Postfix) with ESMTPS id 1605F3813E
+	for <cp_user@dev1.cpgtest.ostinet.net>; Mon, 13 Feb 2012 09:32:03 +0000 (UTC)
+Received: from G9W0364.americas.hpqcorp.net (16.216.193.45) by
+ G2W1953G.americas.hpqcorp.net (16.238.8.185) with Microsoft SMTP Server (TLS)
+ id 14.1.289.1; Mon, 13 Feb 2012 09:31:47 +0000
+Received: from G9W0725.americas.hpqcorp.net ([169.254.8.28]) by
+ G9W0364.americas.hpqcorp.net ([16.216.193.45]) with mapi id 14.01.0289.001;
+ Mon, 13 Feb 2012 09:31:46 +0000
+From: "Sharma, Ram" <ram.sharma.6453@aol.com>
+To: "cp_user@dev1.cpgtest.ostinet.net" <cp_user@dev1.cpgtest.ostinet.net>
+Subject: CHT junk characters
+Thread-Topic: CHT junk characters
+Thread-Index: AczqMkyGe1pCA6xUT8GuHfqxdaJm6A==
+Date: Mon, 13 Feb 2012 09:31:46 +0000
+Message-ID: <F1BCA7C8C9F483439DBB1D96C2FA9FEA1856BF@G9W0725.americas.hpqcorp.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [16.216.12.12]
+Content-Type: multipart/alternative;
+	boundary="_000_F1BCA7C8C9F483439DBB1D96C2FA9FEA1856BFG9W0725americashp_"
+MIME-Version: 1.0
+
+--_000_F1BCA7C8C9F483439DBB1D96C2FA9FEA1856BFG9W0725americashp_
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+
+30DKx7ex83fW0M7EtcScedSHDQoNCsPAwPuI1LrPsYqH+KOswtS3UcPAh/ijrLnFt1G7qMbsh/ij
+rLa8yEHKou5EoaPG5LXY09DPyMPxo6zX1LGxgYbMpLDXwe66o417tvjWwaOsgvfKwNbBvfGjrLey
+yGbO5cenxOrT0Mbmo6zKx57p06G12LCyyMuhow0KDQoNCg0K0rvB+amWxt/E6qOs06KH+MjLvajN
+9bzSjNm12KOszJa+U9XkxOGBhqOsyseVcsThtcLMbaGiyPC15NLg1rPD8bGxw8Cho8ThtcLMbdau
+0MKwosS3y7nM2LWknunTosv5geOjrLjEt1G8frxzo7vI8LXk1q7QwsjwteTS4LK71qeho8bklXKj
+rNOih/iqmtfwh/i9zKOs1sLKucflvczNvaGizOzW973Mzb224NPQ0sbD8dXfo6zfaLbJ1tjR86Os
+1rPD8cPAwPuI1KOss/WVcreyyq7I/dbdoaPLw+Hho6yaV8FfsM3WrrXC0uLWvqGiyPDKv6GikNug
+lsxttci12KOs0uDT0N93w8DV36GjDQoNCg==
+
+--_000_F1BCA7C8C9F483439DBB1D96C2FA9FEA1856BFG9W0725americashp_
+Content-Type: text/html; charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+/* Page Definitions */
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"text-justify-t=
+rim:punctuation">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"ZH-CN" style=3D"font-family:&quot;SimS=
+un&quot;,&quot;serif&quot;">=DF@=CA=C7=B7=B1=F3w=D6=D0=CE=C4=B5=C4=9Cy=D4=
+=87</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"ZH-CN" style=3D"font-family:&quot;SimS=
+un&quot;,&quot;serif&quot;">=C3=C0=C0=FB=88=D4=BA=CF=B1=8A=87=F8=A3=AC=C2=
+=D4=B7Q=C3=C0=87=F8=A3=AC=B9=C5=B7Q=BB=A8=C6=EC=87=F8=A3=AC=B6=BC=C8A=CA=A2=
+=EED=A1=A3=C6=E4=B5=D8=D3=D0=CF=C8=C3=F1=A3=AC=D7=D4=B1=B1=81=86=CC=A4=B0=
+=D7=C1=EE=BA=A3=8D{=B6=F8=D6=C1=A3=AC=82=F7=CA=C0=D6=C1=BD=F1=A3=AC=B7=B2=
+=C8f=CE=E5=C7=A7=C4=EA=D3=D0=C6=E6=A3=AC=CA=C7=9E=E9=D3=A1=B5=D8=B0=B2=C8=
+=CB=A1=A3</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"ZH-CN" style=3D"font-family:&quot;SimS=
+un&quot;,&quot;serif&quot;">=D2=BB=C1=F9=A9=96=C6=DF=C4=EA=A3=AC=D3=A2=87=
+=F8=C8=CB=BD=A8=CD=F5=BC=D2=8C=D9=B5=D8=A3=AC=CC=96=BES=D5=E4=C4=E1=81=86=
+=A3=AC=CA=C7=95r=C4=E1=B5=C2=CCm=A1=A2=C8=F0=B5=E4=D2=E0=D6=B3=C3=F1=B1=B1=
+=C3=C0=A1=A3=C4=E1=B5=C2=CCm=D6=AE=D0=C2=B0=A2=C4=B7=CB=B9=CC=D8=B5=A4=9E=
+=E9=D3=A2=CB=F9=81=E3=A3=AC=B8=C4=B7Q=BC~=BCs=A3=BB=C8=F0=B5=E4=D6=AE=D0=C2=
+=C8=F0=B5=E4=D2=E0=B2=BB=D6=A7=A1=A3=C6=E4=95r=A3=AC=D3=A2=87=F8=AA=9A=D7=
+=F0=87=F8=BD=CC=A3=AC=D6=C2=CA=B9=C7=E5=BD=CC=CD=BD=A1=A2=CC=EC=D6=F7=BD=CC=
+=CD=BD=B6=E0=D3=D0=D2=C6=C3=F1=D5=DF=A3=AC=DFh=B6=C9=D6=D8=D1=F3=A3=AC=D6=
+=B3=C3=F1=C3=C0=C0=FB=88=D4=A3=AC=B3=F5=95r=B7=B2=CA=AE=C8=FD=D6=DD=A1=A3=
+=CB=C3=E1=E1=A3=AC=9AW=C1_=B0=CD=D6=AE=B5=C2=D2=E2=D6=BE=A1=A2=C8=F0=CA=BF=
+=A1=A2=90=DB=A0=96=CCm=B5=C8=B5=D8=A3=AC=D2=E0=D3=D0=DFw=C3=C0=D5=DF=A1=A3<=
+/span><o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_F1BCA7C8C9F483439DBB1D96C2FA9FEA1856BFG9W0725americashp_--

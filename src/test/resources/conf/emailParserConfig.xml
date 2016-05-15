@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+		<charSetFallback>iso-ir-58\,chinese\,gbk\,cn-gb\,csgb2312\,csiso58gb231280\,euc-cn\,euc_cn\,euccn\,gb2312\,gb_2312-80\,x-EUC-CN\,gb2312-1980\,gb2312-80:GB18030,5601\,ksc5601-1987\,ksc5601_1987\,euckr\,ksc5601\,ksc_5601\,euc_kr\,csEUCKR\,ks_c_5601-1987:EUC-KR,ms-874\,ms874\,windows-874\,cp874\,874\,cs874\,ibm874:TIS-620,cp932:cp943</charSetFallback>
+		<imageFileFormats>jpeg,jpg,jpe,jfif,png,tiff,tif,bmp,gif,dib,icb,mng,epsf,xbm,pbm,pcx,pgm,xpm,ppm,rgb</imageFileFormats>		
+  </appSettings>
+</configuration>

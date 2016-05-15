@@ -1,0 +1,122 @@
+Delivered-To: ram.sharma.6453@gmail.com
+Received: by 10.216.185.139 with SMTP id u11cs76167wem;
+        Mon, 1 Aug 2011 01:28:06 -0700 (PDT)
+Received: by 10.68.5.201 with SMTP id u9mr6882931pbu.218.1312187285451;
+        Mon, 01 Aug 2011 01:28:05 -0700 (PDT)
+Return-Path: <vaibhaveprint@gmail.com>
+Received: from mail-pz0-f53.google.com (mail-pz0-f53.google.com [209.85.210.53])
+        by mx.google.com with ESMTPS id s9si2886357wfh.63.2011.08.01.01.28.04
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 01 Aug 2011 01:28:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of vaibhaveprint@gmail.com designates 209.85.210.53 as permitted sender) client-ip=209.85.210.53;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of vaibhaveprint@gmail.com designates 209.85.210.53 as permitted sender) smtp.mail=vaibhaveprint@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by mail-pz0-f53.google.com with SMTP id 6so10134652pzk.12
+        for <ram.sharma.6453@gmail.com>; Mon, 01 Aug 2011 01:28:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=from:content-type:subject:date:references:to:message-id
+         :mime-version:x-mailer;
+        bh=OAY4Z16ndGuFYLUE3xowUgnTdCK8nbV/NMuCFVt08u4=;
+        b=oc4cYDOTZspE27fDuoAZQutSd5sii512X1iAA6hbHGiPDJYe34LoG9vHtXDYgK2LPB
+         vjolAIZGbkidEHPgZJp8JEgX/Rx7/Ks9jmyH07u12jw5VWqGnEDrKks7LBFSTL+RvOO9
+         ySdXOqc9Oo6KrXBiplM6duUQE8sDcRrlaL1f0=
+Received: by 10.68.28.1 with SMTP id x1mr7940672pbg.77.1312187284564;
+        Mon, 01 Aug 2011 01:28:04 -0700 (PDT)
+Return-Path: <vaibhaveprint@gmail.com>
+Received: from [192.168.1.115] ([14.98.128.4])
+        by mx.google.com with ESMTPS id b4sm5288132pba.43.2011.08.01.01.27.59
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 01 Aug 2011 01:28:04 -0700 (PDT)
+From: vaibhav misra <vaibhaveprint@gmail.com>
+Content-Type: multipart/mixed; boundary=Apple-Mail-22-1020105790
+Subject: Fwd: Chines file Names in attachments from mac 2
+Date: Mon, 1 Aug 2011 13:57:51 +0530
+References: <CAJnCofRSg0Oaf0anaOU=B8gWPs7_zV5-z9aePwjPXW-SbCnB6w@mail.gmail.com>
+To: ram.sharma.6453@gmail.com
+Message-Id: <283192E2-EE7D-4F3B-AA5C-AD0A296963ED@gmail.com>
+Mime-Version: 1.0 (Apple Message framework v1084)
+X-Mailer: Apple Mail (2.1084)
+
+
+--Apple-Mail-22-1020105790
+Content-Transfer-Encoding: base64
+Content-Type: text/plain;
+	charset=GB2312
+
+DQo+IA0KPiDO0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6tbPO
+0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6tbPO0rK7ysfW0Ln6
+ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6tbPO0rK7ysfW0Ln6ubKy+rWzztKy
+u8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6tbPO0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmy
+svq1s87SsrvKx9bQufq5srL6tbPO0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvK
+x9bQufq5srL6tbPO0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6
+tbPO0rK7ysfW0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1s87SsrvKx9bQufq5srL6tbPO0rK7ysfW
+0Ln6ubKy+rWzztKyu8rH1tC5+rmysvq1sw0K
+
+--Apple-Mail-22-1020105790
+Content-Disposition: attachment;
+	filename*=GB2312''%CE%D2%CA%C7%D6%D0%B9%FA%C8%CB.txt
+Content-Type: text/plain;
+	name="=?GB2312?Q?=CE=D2=CA=C7=D6=D0=B9=FA=C8=CB=2Etxt?="
+Content-Transfer-Encoding: base64
+
+77u/5oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit
+5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv
+5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR
+5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq6
+5oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu9
+5Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit
+5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv
+5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR
+5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq6
+5oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu9
+5Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit
+5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv
+5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR
+5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq6
+5oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu95Lq65oiR5piv5Lit5Zu9
+5Lq6
+
+--Apple-Mail-22-1020105790
+Content-Disposition: attachment;
+	filename*=iso-2022-cn''%1B%24%29A%0ENR2%3BJGVP%1B%24%29GYOGA%5C%28%0F.txt
+Content-Type: text/plain;
+	name="=?utf-8?B?5oiR5LiN5piv5Lit5ZyL5YWx55SiLnR4dA==?="
+Content-Transfer-Encoding: base64
+
+77u/5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit
+5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN
+5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si
+5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL
+5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv
+5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR
+5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx
+55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit
+5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN
+5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si
+5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL
+5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv
+5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR
+5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx
+55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit
+5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN
+5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si
+5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL
+5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv
+5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR
+5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx
+55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit
+5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN
+5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si
+5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL
+5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv
+5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR5LiN5piv5Lit5ZyL5YWx55Si5oiR
+5LiN5piv5Lit5ZyL5YWx55Si
+
+--Apple-Mail-22-1020105790
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain;
+	charset=us-ascii
+
+
+
+--Apple-Mail-22-1020105790--
