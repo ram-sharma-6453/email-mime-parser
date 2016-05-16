@@ -1,5 +1,5 @@
 # email-mime-parser
-A simplified email mime parser for java
+A mime4j based simplified email mime parser for java
 
 The provided email parser is based on Mime4j (https://james.apache.org/mime4j/index.html)
 
