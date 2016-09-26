@@ -4,17 +4,8 @@ Received: by 10.216.154.71 with SMTP id g49cs34477wek;
 Received: by 10.236.77.202 with SMTP id d50mr32221455yhe.120.1315400743874;
         Wed, 07 Sep 2011 06:05:43 -0700 (PDT)
 Return-Path: <ram.sharma.6453@aol.com>
-Received: from g4t0015.houston.hp.com (g4t0015.houston.hp.com [15.201.24.18])
-        by mx.google.com with ESMTPS id d61si276858yhn.19.2011.09.07.06.05.43
-        (version=TLSv1/SSLv3 cipher=OTHER);
-        Wed, 07 Sep 2011 06:05:43 -0700 (PDT)
 Received-SPF: pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.201.24.18 as permitted sender) client-ip=15.201.24.18;
 Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.201.24.18 as permitted sender) smtp.mail=ram.sharma.6453@aol.com
-Received: from G6W1798G.americas.hpqcorp.net (g6w1798g.atlanta.hp.com [16.230.17.175])
-	(using TLSv1 with cipher AES128-SHA (128/128 bits))
-	(No client certificate requested)
-	by g4t0015.houston.hp.com (Postfix) with ESMTPS id 1F0EB8826
-	for <ram.sharma.6453@gmail.com>; Wed,  7 Sep 2011 13:05:43 +0000 (UTC)
 Received: from G9W0366G.americas.hpqcorp.net (16.216.193.230) by
  G6W1798G.americas.hpqcorp.net (16.230.17.175) with Microsoft SMTP Server
  (TLS) id 14.1.289.1; Wed, 7 Sep 2011 13:05:00 +0000
@@ -137,26 +128,10 @@ Content-Disposition: attachment;
 	creation-date="Wed, 07 Sep 2011 13:04:55 GMT";
 	modification-date="Wed, 07 Sep 2011 13:04:55 GMT"
 
-Received: from G5W0332.americas.hpqcorp.net (16.228.8.74) by
- G9W1579G.americas.hpqcorp.net (16.216.212.153) with Microsoft SMTP Server
- (TLS) id 14.1.289.1; Thu, 1 Sep 2011 12:53:28 +0000
-Received: from g1t0024.austin.hp.com (15.216.28.31) by
- G5W0332.americas.hpqcorp.net (16.228.8.74) with Microsoft SMTP Server (TLS)
- id 8.2.176.0; Thu, 1 Sep 2011 12:53:27 +0000
-Received: from mail.apache.org (hermes.apache.org [140.211.11.3])	by
- g1t0024.austin.hp.com (Postfix) with SMTP id 0F3324011	for
- <ram.sharma.6453@aol.com>; Thu,  1 Sep 2011 12:53:25 +0000 (UTC)
 Received: (qmail 71599 invoked by uid 500); 1 Sep 2011 12:53:24 -0000
 Received: (qmail 71591 invoked by uid 99); 1 Sep 2011 12:53:23 -0000
 Received: from nike.apache.org (HELO nike.apache.org) (192.87.106.230)    by
  apache.org (qpsmtpd/0.29) with ESMTP; Thu, 01 Sep 2011 12:53:23 +0000
-Received: from [15.216.28.35] (HELO g1t0028.austin.hp.com) (15.216.28.35)
-    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 01 Sep 2011 12:53:13 +0000
-Received: from G6W0641.americas.hpqcorp.net (g6w0641.atlanta.hp.com
- [16.230.34.77])	(using TLSv1 with cipher RC4-MD5 (128/128 bits))	(No client
- certificate requested)	by g1t0028.austin.hp.com (Postfix) with ESMTPS id
- E381A1C3B5	for <mime4j-dev@james.apache.org>; Thu,  1 Sep 2011 12:52:50 +0000
- (UTC)
 Received: from G9W0704G.americas.hpqcorp.net (16.216.198.35) by
  G6W0641.americas.hpqcorp.net (16.230.34.77) with Microsoft SMTP Server (TLS)
  id 8.2.176.0; Thu, 1 Sep 2011 12:52:39 +0000

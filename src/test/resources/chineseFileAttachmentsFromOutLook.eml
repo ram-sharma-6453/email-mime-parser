@@ -4,17 +4,8 @@ Received: by 10.216.185.139 with SMTP id u11cs75459wem;
 Received: by 10.224.184.80 with SMTP id cj16mr3036266qab.341.1312185477633;
         Mon, 01 Aug 2011 00:57:57 -0700 (PDT)
 Return-Path: <ram.sharma.6453@aol.com>
-Received: from g6t0187.atlanta.hp.com (g6t0187.atlanta.hp.com [15.193.32.64])
-        by mx.google.com with ESMTPS id ec2si4583841qab.91.2011.08.01.00.57.57
-        (version=TLSv1/SSLv3 cipher=OTHER);
-        Mon, 01 Aug 2011 00:57:57 -0700 (PDT)
 Received-SPF: pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.193.32.64 as permitted sender) client-ip=15.193.32.64;
 Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.193.32.64 as permitted sender) smtp.mail=ram.sharma.6453@aol.com
-Received: from G1W0401.americas.hpqcorp.net (g1w0401.americas.hpqcorp.net [16.236.31.6])
-	(using TLSv1 with cipher RC4-MD5 (128/128 bits))
-	(No client certificate requested)
-	by g6t0187.atlanta.hp.com (Postfix) with ESMTPS id 0E4B828462
-	for <ram.sharma.6453@gmail.com>; Mon,  1 Aug 2011 07:57:57 +0000 (UTC)
 Received: from G4W1853.americas.hpqcorp.net (16.234.97.231) by
  G1W0401.americas.hpqcorp.net (16.236.31.6) with Microsoft SMTP Server (TLS)
  id 8.2.176.0; Mon, 1 Aug 2011 07:57:46 +0000

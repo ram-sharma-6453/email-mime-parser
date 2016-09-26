@@ -4,23 +4,8 @@ Received: by 10.216.185.139 with SMTP id u11cs128868wem;
 Received: by 10.68.22.197 with SMTP id g5mr10207270pbf.248.1312296298369;
         Tue, 02 Aug 2011 07:44:58 -0700 (PDT)
 Return-Path: <ram.sharma.6453@aol.com>
-Received: from g1t0027.austin.hp.com (g1t0027.austin.hp.com [15.216.28.34])
-        by mx.google.com with ESMTPS id g8si18020690pbc.14.2011.08.02.07.44.57
-        (version=TLSv1/SSLv3 cipher=OTHER);
-        Tue, 02 Aug 2011 07:44:58 -0700 (PDT)
 Received-SPF: pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.216.28.34 as permitted sender) client-ip=15.216.28.34;
 Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of ram.sharma.6453@aol.com designates 15.216.28.34 as permitted sender) smtp.mail=ram.sharma.6453@aol.com
-Received: from G2W1953G.americas.hpqcorp.net (gvt0525.austin.hp.com [16.238.8.185])
-	(using TLSv1 with cipher AES128-SHA (128/128 bits))
-	(No client certificate requested)
-	by g1t0027.austin.hp.com (Postfix) with ESMTPS id 280BE384C6
-	for <ram.sharma.6453@gmail.com>; Tue,  2 Aug 2011 14:44:57 +0000 (UTC)
-Received: from G3W0628.americas.hpqcorp.net (16.233.58.53) by
- G2W1953G.americas.hpqcorp.net (16.238.8.185) with Microsoft SMTP Server (TLS)
- id 14.1.289.1; Tue, 2 Aug 2011 14:42:59 +0000
-Received: from GVW1154EXB.americas.hpqcorp.net ([16.232.35.141]) by
- G3W0628.americas.hpqcorp.net ([16.233.58.53]) with mapi; Tue, 2 Aug 2011
- 15:42:59 +0100
 From: "Sharma, Ram" <ram.sharma.6453@aol.com>
 To: "ram.sharma.6453@gmail.com" <ram.sharma.6453@gmail.com>
 Date: Tue, 2 Aug 2011 15:42:55 +0100
