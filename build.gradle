@@ -1,4 +1,4 @@
-group 'com.blueglacier'
+group 'tech.blueglacier'
 version '1.0.0'
 
 apply plugin: 'java'
