@@ -21,7 +21,7 @@ For maven project :
 For gradle project :
 
 ```
-group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.0'
+compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.0'])
 ```
 
 **Sample code :**
