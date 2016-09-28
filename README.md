@@ -34,16 +34,25 @@ MimeStreamParser mime4jParser = new MimeStreamParser(mime4jParserConfig,DecodeMo
 mime4jParser.setContentDecoding(true);
 mime4jParser.setContentHandler(contentHandler);
 
-
 InputStream mailIn = 'Provide email mime stream here';
 mime4jParser.parse(mailIn);
 
 Email email = ((CustomContentHandler) contentHandler).getEmail();
+
+List<Attachment> attachments =  email.getAttachments();
+		
+Attachment calendar = email.getCalendarBody();
+Attachment htmlBody = email.getHTMLEmailBody();
+Attachment plainText = email.getPlainTextEmailBody();
+		
+String to = email.getToEmailHeaderValue();
+String cc = email.getCCEmailHeaderValue();
+String from = email.getFromEmailHeaderValue();
 ```
 
  The 'email' object provides the logical email entities via convenience methods now.
 
- For more info check the test case file **'ParserTest.java'**
+ For more info check the test case file **'src\test\java\tech\blueglacier\parser\ParserTest.java'**
 
 
 
