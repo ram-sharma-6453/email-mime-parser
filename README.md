@@ -7,21 +7,21 @@ The provided email parser is based on Mime4j (https://james.apache.org/mime4j/in
 
 Add the following dependencies to your project:
 
+For maven project :
+
 ```
-dependencies {
-    compile([group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
-            [group: 'javax.mail', name: 'mail', version: '1.4.7'],
-            [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j', version: '0.7.2'],
-            [group: 'commons-codec', name: 'commons-codec', version: '1.10'],
-            [group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'],
-            [group: 'commons-io', name: 'commons-io', version: '2.5'],
-            [group: 'commons-configuration', name: 'commons-configuration', version: '1.10'],
-            [group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'],
-            [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'],
-            [group: 'commons-collections', name: 'commons-collections', version: '3.2.2']
-    )
-    }
+<dependency>
+  <groupId>tech.blueglacier</groupId>
+  <artifactId>email-mime-parser</artifactId>
+  <version>1.0.0</version>
+</dependency>
+
+```
+
+For gradle project :
+
+```
+group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.0'
 ```
 
 **Sample code :**
