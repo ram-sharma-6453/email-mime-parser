@@ -50,9 +50,7 @@ String cc = email.getCCEmailHeaderValue();
 String from = email.getFromEmailHeaderValue();
 ```
 
- The 'email' object provides the logical email entities via convenience methods now.
-
- For more info check the test case file **'src\test\java\tech\blueglacier\parser\ParserTest.java'**
+For more info check the test case file **'src\test\java\tech\blueglacier\parser\ParserTest.java'**
 
 
 
