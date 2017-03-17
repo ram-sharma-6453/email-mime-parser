@@ -25,7 +25,7 @@ public class EmailParseManager {
 
 	public Email getParsedEmail() throws MimeException, IOException {
 		
-		MimeConfig mime4jParserConfig = new MimeConfig();
+		MimeConfig mime4jParserConfig = MimeConfig.DEFAULT;
 		BodyDescriptorBuilder bodyDescriptorBuilder = new DefaultBodyDescriptorBuilder();
 		MimeStreamParser mime4jParser = new MimeStreamParser(mime4jParserConfig,DecodeMonitor.SILENT,bodyDescriptorBuilder);
 		mime4jParser.setContentDecoding(true);
