@@ -13,7 +13,7 @@ For maven project :
 <dependency>
   <groupId>tech.blueglacier</groupId>
   <artifactId>email-mime-parser</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 
 ```
@@ -21,14 +21,14 @@ For maven project :
 For gradle project :
 
 ```
-compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.0'])
+compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.1'])
 ```
 
 **Sample code :**
 ```
 ContentHandler contentHandler = new CustomContentHandler();
 
-MimeConfig mime4jParserConfig = new MimeConfig();
+MimeConfig mime4jParserConfig = MimeConfig.DEFAULT;
 BodyDescriptorBuilder bodyDescriptorBuilder = new DefaultBodyDescriptorBuilder();
 MimeStreamParser mime4jParser = new MimeStreamParser(mime4jParserConfig,DecodeMonitor.SILENT,bodyDescriptorBuilder);
 mime4jParser.setContentDecoding(true);
