@@ -34,3 +34,19 @@ test {
     testLogging.exceptionFormat = 'full';
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError";
 }
+
+task cleanDownloadedDependencies(type: Delete) {
+    delete fileTree('dependencies')
+    delete file('dependencies')
+}
+
+task copyDependencies(type: Copy) {
+    dependsOn cleanDownloadedDependencies
+
+    from configurations.compile
+    into 'dependencies'
+
+    from configurations.testCompile
+    into 'dependencies'
+}
+
