@@ -15,13 +15,18 @@ For maven project :
   <artifactId>email-mime-parser</artifactId>
   <version>1.0.1</version>
 </dependency>
-
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.25</version>
+</dependency>
 ```
 
 For gradle project :
 
 ```
-compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.1'])
+compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.1'],
+        [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'])
 ```
 
 **Sample code :**
