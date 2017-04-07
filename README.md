@@ -21,6 +21,9 @@ For maven project :
     <version>1.7.25</version>
 </dependency>
 ```
+If you are facing issues in dependency resolution with maven, check the suggested solution here:
+
+https://github.com/ram-sharma-6453/email-mime-parser/issues/2
 
 For gradle project :
 
