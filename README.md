@@ -13,23 +13,14 @@ For maven project :
 <dependency>
   <groupId>tech.blueglacier</groupId>
   <artifactId>email-mime-parser</artifactId>
-  <version>1.0.1</version>
-</dependency>
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.7.25</version>
+  <version>1.0.2</version>
 </dependency>
 ```
-If you are facing issues in dependency resolution with maven, check the suggested solution here:
-
-https://github.com/ram-sharma-6453/email-mime-parser/issues/2
 
 For gradle project :
 
 ```
-compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.1'],
-        [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'])
+compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.2'])
 ```
 
 **Sample code :**

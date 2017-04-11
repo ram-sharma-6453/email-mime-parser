@@ -1,5 +1,5 @@
 group 'tech.blueglacier'
-version '1.0.1'
+version '1.0.2'
 
 apply plugin: 'java'
 
@@ -13,7 +13,10 @@ dependencies {
     compile([group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
             [group: 'javax.mail', name: 'mail', version: '1.4.7'],
             [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j', version: '0.8.0'],
+            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.0'],
+            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.0'],
+            [group: 'org.apache.james', name: 'apache-mime4j-storage', version: '0.8.0'],
+            [group: 'org.apache.james', name: 'apache-mime4j-mbox-iterator', version: '0.8.0'],
             [group: 'commons-codec', name: 'commons-codec', version: '1.10'],
             [group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'],
             [group: 'commons-io', name: 'commons-io', version: '2.5'],
@@ -50,4 +53,3 @@ task copyDependencies(type: Copy) {
     from configurations.testCompile
     into 'dependencies'
 }
-
