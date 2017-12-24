@@ -1,5 +1,5 @@
 group 'tech.blueglacier'
-version '1.0.2'
+version '1.0.3'
 
 apply plugin: 'java'
 
@@ -24,7 +24,8 @@ dependencies {
             [group: 'ch.qos.logback', name: 'logback-core', version: '1.2.1'],
             [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'],
             [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'],
-            [group: 'commons-collections', name: 'commons-collections', version: '3.2.2']
+            [group: 'commons-collections', name: 'commons-collections', version: '3.2.2'],
+            [group: 'com.google.guava', name: 'guava', version: '23.6-jre']
     )
     testCompile group: 'org.testng', name: 'testng', version: '6.11'
 }

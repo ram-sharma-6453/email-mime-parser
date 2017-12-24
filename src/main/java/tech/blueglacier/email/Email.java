@@ -1,5 +1,6 @@
 package tech.blueglacier.email;
 
+import com.google.common.net.MediaType;
 import tech.blueglacier.configuration.AppConfig;
 import tech.blueglacier.util.Common;
 import org.apache.commons.codec.binary.Base64;
@@ -270,18 +271,19 @@ public class Email {
 	}
 
 	private void replaceInlineImageAttachmentsInHtmlBody() {
-		if(htmlEmailBody != null){
-			String strHTMLBody = getHtmlBodyString();	
+		if (htmlEmailBody != null) {
+			String strHTMLBody = getHtmlBodyString();
 
 			List<Attachment> removalList = new ArrayList<Attachment>();
 
 			for (int i = 0; i < attachments.size(); i++) {
 				Attachment attachment = attachments.get(i);
-				if(isImage(attachment)){
-				String contentId = getAttachmentContentID(attachment);			
-				strHTMLBody = replaceAttachmentInHtmlBody(strHTMLBody, removalList, attachment, contentId);
-			}		
-			}		
+				if (isImage(attachment)) {
+					String imageMimeType = getImageMimeType(attachment);
+					String contentId = getAttachmentContentID(attachment);
+					strHTMLBody = replaceAttachmentInHtmlBody(strHTMLBody, removalList, attachment, contentId, imageMimeType);
+				}
+			}
 
 			removeAttachments(removalList);
 			resetRecreatedHtmlBody(strHTMLBody);
@@ -290,8 +292,8 @@ public class Email {
 	}
 
 	private String replaceAttachmentInHtmlBody(String strHTMLBody,
-			List<Attachment> removalList, Attachment attachment,
-			String contentId) {
+											   List<Attachment> removalList, Attachment attachment,
+											   String contentId, String imageMimeType) {
 		if (strHTMLBody.contains("cid:" + contentId)) {
 			String base64EncodedAttachment = null;
 			try {
@@ -299,7 +301,7 @@ public class Email {
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
-			strHTMLBody = strHTMLBody.replace("cid:" + contentId, "data:;base64," + base64EncodedAttachment);
+			strHTMLBody = strHTMLBody.replace("cid:" + contentId, "data:" + imageMimeType + ";base64," + base64EncodedAttachment);
 			removalList.add(attachment);
 			attachmentReplacedInHtmlBody = true;
 		}
@@ -311,6 +313,25 @@ public class Email {
 			return true;
 		}
 		return false;
+	}
+
+	private String getImageMimeType(Attachment attachment) {
+		String imageMimeType = ((MaximalBodyDescriptor) attachment.getBd()).getMimeType();
+		if (!isValidImageMimeType(imageMimeType)) {
+			imageMimeType = StringUtils.EMPTY;
+		}
+		return imageMimeType;
+	}
+
+	private boolean isValidImageMimeType(String imageMimeType) {
+		// Here 'MediaType' of Google Guava library is 'MimeType' of Apache James mime4j
+		MediaType mediaType = null;
+		try {
+			mediaType = MediaType.parse(imageMimeType);
+		} catch (IllegalArgumentException e) {
+			LOGGER.error(e.getMessage());
+		}
+		return (mediaType != null);
 	}
 
 	public boolean isAttachmentReplacedInHtmlBody() {

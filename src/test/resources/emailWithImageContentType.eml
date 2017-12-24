@@ -1,0 +1,80 @@
+Received: from ... named unknown by gmailapi.google.com with HTTPREST; Sun, 10 Dec 2017 09:57:01 -0500
+Mime-Version: 1.0
+Subject: Email Test
+Date: Sun, 10 Dec 2017 06:56:40 -0800
+Content-Type: multipart/related; boundary=7707cecc44e2a4b559bf247986cc2fa238aba979c4114f08a41ef185ce8d
+
+--7707cecc44e2a4b559bf247986cc2fa238aba979c4114f08a41ef185ce8d
+Content-Type: multipart/alternative; boundary=a930ab165aeb07e49b5f1343c914fb67f615b72a476ade3f9624031889f9
+
+--a930ab165aeb07e49b5f1343c914fb67f615b72a476ade3f9624031889f9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida lig=
+ula eget nisi maximus varius. Quisque condimentum tristique risus a imperdi=
+et. Proin nec lorem nec ipsum faucibus tempus eget at mauris. Ut quis maxim=
+us libero, quis gravida orci. Morbi mollis orci eu ante faucibus blandit. V=
+ivamus lacinia nec justo tincidunt mattis. Aliquam quis nisi at est ullamco=
+rper faucibus. Sed ullamcorper mollis faucibus. Aliquam luctus nunc sed orc=
+i lobortis laoreet. Proin eu est massa. Curabitur dignissim et magna ac con=
+sequat. Integer convallis maximus sagittis. Integer congue ultrices vehicul=
+a. Suspendisse mattis ipsum id leo mattis, sit amet iaculis ligula mollis. =
+Duis venenatis tempor sem.
+
+| FIELD | TYPE | NOTE | REQUIRED |
+|-------------------------------------|----------|-------------------------=
+-----------------------------------------------|----------|
+| `$.payload.issue.title` | `string` | A issue title. | yes |
+| `$.payload.issue.assignee.id` | `string` | The ID of a user assigned to t=
+he issue if one has been assigned. | no * |
+| `$.payload.issue.assignee.name` | `string` | The name of a user assigned =
+to the issue if one has been assigned. | no * |
+| `$.payload.issue.assignee.email` | `string` | The email of a user assigne=
+d to the issue if one has been assigned. | no * |
+| `$.payload.issue.assignee.username` | `string` | The username of a user a=
+ssigned to the issue if one has been assigned. | no * |
+| `$.payload.issue.labels[i].title` | `string` | The title of issue label. =
+| no * |
+| `$.payload.issue.labels[i].color` | `string` | The the color assigned to =
+the issue label. | no * |
+| `$.payload.comment.body` | `string` | The body of the initial issue comme=
+nt. | yes |
+
+...
+Sent from ... ( ... )
+--a930ab165aeb07e49b5f1343c914fb67f615b72a476ade3f9624031889f9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<style>pre {font-family: sans-serif;white-space: pre-line !important;}</sty=
+le>
+<div>
+<div><span style=3D"font-family: 'Open Sans', Arial, sans-serif; font-size:=
+ 14px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(25=
+5, 255, 255);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mau=
+ris gravida ligula eget nisi maximus varius. Quisque condimentum tristique =
+risus a imperdiet. Proin nec lorem nec ipsum faucibus tempus eget at mauris=
+. Ut quis maximus libero, quis gravida orci. Morbi mollis orci eu ante fauc=
+ibus blandit. Vivamus lacinia nec justo tincidunt mattis. Aliquam quis nisi=
+ at est ullamcorper faucibus. Sed ullamcorper mollis faucibus. Aliquam luct=
+us nunc sed orci lobortis laoreet. Proin eu est massa. Curabitur dignissim =
+et magna ac consequat. Integer convallis maximus sagittis. Integer congue u=
+ltrices vehicula. Suspendisse mattis ipsum id leo mattis, sit amet iaculis =
+ligula mollis. Duis venenatis tempor sem.</span>
+</div>
+</div>
+<div>
+<img id=3D"pm-inline-id-5a2d4b02cdf037000051a333" class=3D"pm-inline" style=
+=3D"max-width:100%" src=3D"cid:5a2d4b02cdf037000051a333"><br>
+</div>
+
+--a930ab165aeb07e49b5f1343c914fb67f615b72a476ade3f9624031889f9--
+--7707cecc44e2a4b559bf247986cc2fa238aba979c4114f08a41ef185ce8d
+Content-Disposition: inline; filename="Screen Shot 2017-12-10 at 10.37.11-min.jpg"
+Content-ID: <5a2d4b02cdf037000051a333>
+Content-Transfer-Encoding: base64
+Content-Type: image/jpeg
+
+
+--7707cecc44e2a4b559bf247986cc2fa238aba979c4114f08a41ef185ce8d--

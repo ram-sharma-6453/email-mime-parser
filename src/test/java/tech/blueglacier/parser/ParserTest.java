@@ -146,13 +146,32 @@ public class ParserTest {
 		return email;
 	}
 
+	@Test
+	public void testEmailWithImageContentType() throws MimeException, IOException{
+		Email email = getEmailWithImageContentType();
+		assertEmailWithImageContentMerge(email);
+		assertNumberOfAttachmnetInEmail(email);
+	}
+
+	private Email getEmailWithImageContentType()
+			throws  MimeException, IOException {
+		ContentHandler inlineMessageContentHandler = getContentHandler();
+		Email email = getParsedEmail("emailWithImageContentType.eml",inlineMessageContentHandler);
+		return email;
+	}
+
+	private void assertEmailWithImageContentMerge(Email email) throws IOException {
+		String htmlBodyChecksum = generateCheckSum(email.getHTMLEmailBody().getIs());
+		Assert.assertEquals(htmlBodyChecksum,"2b9092245d581e97ba587c897f6cd89f41c15fde");
+	}
+
 	private void assertNumberOfAttachmnetInEmail(Email email) {
 		Assert.assertEquals(email.getAttachments().size(), 0);		
 	}
 
 	private void assertInlineAttachmentMerge(Email email) throws IOException {
 		String htmlBodyChecksum = generateCheckSum(email.getHTMLEmailBody().getIs());		
-		Assert.assertEquals(htmlBodyChecksum,"b357e3aad66913925655e2a3c2277511a6776af0");
+		Assert.assertEquals(htmlBodyChecksum,"0620b63bb72deed17f069409b52d7969f6c3e7d8");
 	}
 	
 	@Test
@@ -200,7 +219,7 @@ public class ParserTest {
 
 	private void assertHtmlIsCorrectlyParsed(Attachment htmlBody) throws IOException {		
 		String htmlBodyChecksum = generateCheckSum(htmlBody.getIs());		
-		Assert.assertEquals(htmlBodyChecksum,"c4d826387b02d201baa5e254535696755ee74c43");
+		Assert.assertEquals(htmlBodyChecksum,"7ec72df5d3e0e68ae7f53f84f8ecfdf4296bd7e9");
 	}
 	
 	@Test
@@ -256,7 +275,7 @@ public class ParserTest {
 		List<Attachment> attachments = email.getAttachments();		
 		
 		int actualEmailSize = 0; //in Bytes
-		int expectedEmailSize = 2405973;
+		int expectedEmailSize = 2405993;
 
 		actualEmailSize += email.getHTMLEmailBody().getAttachmentSize();
 		actualEmailSize += email.getPlainTextEmailBody().getAttachmentSize();
