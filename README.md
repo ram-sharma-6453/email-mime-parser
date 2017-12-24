@@ -13,14 +13,14 @@ For maven project :
 <dependency>
   <groupId>tech.blueglacier</groupId>
   <artifactId>email-mime-parser</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 
 For gradle project :
 
 ```
-compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.2'])
+compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.3'])
 ```
 
 **Sample code :**
