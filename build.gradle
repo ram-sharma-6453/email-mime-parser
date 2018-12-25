@@ -1,5 +1,5 @@
 group 'tech.blueglacier'
-version '1.0.3'
+version '1.0.4'
 
 apply plugin: 'java'
 
@@ -10,8 +10,7 @@ repositories {
 }
 
 dependencies {
-    compile([group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
-            [group: 'javax.mail', name: 'mail', version: '1.4.7'],
+    compile([group: 'javax.mail', name: 'mail', version: '1.4.7'],
             [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
             [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.0'],
             [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.0'],
@@ -27,7 +26,8 @@ dependencies {
             [group: 'commons-collections', name: 'commons-collections', version: '3.2.2'],
             [group: 'com.google.guava', name: 'guava', version: '23.6-jre']
     )
-    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+    testCompile([group: 'org.testng', name: 'testng', version: '6.11'],
+            [group: 'org.mockito', name: 'mockito-all', version: '1.10.19'])
 }
 
 test {
@@ -39,6 +39,7 @@ test {
     testLogging.exceptionFormat = 'full';
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError";
 }
+
 
 task cleanDownloadedDependencies(type: Delete) {
     delete fileTree('dependencies')
