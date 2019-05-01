@@ -1,6 +1,8 @@
 # email-mime-parser
 A mime4j based simplified email mime parser for java
 
+Internet Message Format RFC 822 (and later revisions RFC 2822, RFC 5322, RFC 2183, RFC 2184) and others.
+
 The provided email parser is based on Mime4j (https://james.apache.org/mime4j/index.html)
 
 **Usage**
