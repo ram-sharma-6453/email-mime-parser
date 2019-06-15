@@ -1,7 +1,7 @@
 package tech.blueglacier.email;
 
+import org.apache.james.mime4j.storage.DefaultStorageProvider;
 import tech.blueglacier.storage.AbstractStorageProvider;
-import tech.blueglacier.storage.MemoryStorageProvider;
 import org.apache.james.mime4j.storage.Storage;
 import org.apache.james.mime4j.storage.StorageProvider;
 import org.apache.james.mime4j.stream.BodyDescriptor;
@@ -39,10 +39,14 @@ public abstract class Attachment {
     }
 
     public void setIs(InputStream is) {
-        StorageProvider storageProvider = new MemoryStorageProvider();
+        StorageProvider storageProvider = DefaultStorageProvider.getInstance();
         try {
             storage = storageProvider.store(is);
-            attachmentSize = ((AbstractStorageProvider) storageProvider).getTotalBytesTransffered();
+            if (storageProvider instanceof AbstractStorageProvider) {
+                attachmentSize = ((AbstractStorageProvider) storageProvider).getTotalBytesTransffered();
+            } else {
+                attachmentSize = 0;
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
