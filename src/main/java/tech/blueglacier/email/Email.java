@@ -1,11 +1,12 @@
 package tech.blueglacier.email;
 
 import com.google.common.net.MediaType;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang3.StringUtils;
 import tech.blueglacier.configuration.AppConfig;
 import tech.blueglacier.util.Common;
-import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.configuration2.*;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
 import org.apache.james.mime4j.codec.DecodeMonitor;
 import org.apache.james.mime4j.dom.Header;
 import org.apache.james.mime4j.message.HeaderImpl;
@@ -128,6 +129,14 @@ public class Email {
 		Field cc = header.getField("Cc");	
 		if (cc != null) {
 			return cc.getBody();
+		}
+		return null;
+	}
+
+	public String getBCCEmailHeaderValue(){
+		Field bcc = header.getField("Bcc");
+		if (bcc != null) {
+			return bcc.getBody();
 		}
 		return null;
 	}

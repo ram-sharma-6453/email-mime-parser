@@ -1,11 +1,11 @@
 package tech.blueglacier.disposition;
 
+import jakarta.mail.internet.ParseException;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.james.mime4j.MimeException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.mail.internet.ParseException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,7 @@ public class ContentDispositionParserTest {
 	private String fileName;
 
 	@Test
-	public void getContentDispositionFileName() throws ParseException, MimeException, IOException{		
+	public void getContentDispositionFileName() throws ParseException, MimeException, IOException{
 		setDispositionDecodedFilename().assertDecodedFileString(getPlainTextCheckSum());		
 	}
 

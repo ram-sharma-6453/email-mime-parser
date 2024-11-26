@@ -1,8 +1,8 @@
 package tech.blueglacier.configuration;
 
-import org.apache.commons.configuration.Configuration;
-import org.apache.commons.configuration.ConfigurationException;
-import org.apache.commons.configuration.XMLConfiguration;
+import org.apache.commons.configuration2.Configuration;
+import org.apache.commons.configuration2.XMLConfiguration;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.apache.commons.io.FilenameUtils;
 
 import java.util.Properties;
@@ -15,12 +15,8 @@ public class AppConfig {
 	private Properties charSetMap = null;
 
 	private AppConfig() {
-		try {
-			this.appConfig = new XMLConfiguration(this.getClass().getClassLoader().getResource("conf/emailParserConfig.xml"));
-		} catch (ConfigurationException e) {
-			throw new RuntimeException(e);		
-		}
-	}
+        this.appConfig = new XMLConfiguration();
+    }
 
 	public static AppConfig getInstance() {
 		if (objectInstance == null) {

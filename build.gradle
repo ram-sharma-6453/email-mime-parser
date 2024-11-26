@@ -16,24 +16,29 @@ repositories {
 }
 
 dependencies {
-    compileOnly([group: 'javax.mail', name: 'mail', version: '1.4.7'],
-            [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-storage', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-mbox-iterator', version: '0.8.0'],
-            [group: 'commons-codec', name: 'commons-codec', version: '1.10'],
-            [group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'],
-            [group: 'commons-io', name: 'commons-io', version: '2.5'],
-            [group: 'commons-configuration', name: 'commons-configuration', version: '1.10'],
-            [group: 'ch.qos.logback', name: 'logback-core', version: '1.2.1'],
-            [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'],
-            [group: 'commons-collections', name: 'commons-collections', version: '3.2.2'],
-            [group: 'com.google.guava', name: 'guava', version: '23.6-jre']
+    compileOnly([group: 'jakarta.mail', name: 'jakarta.mail-api', version: '2.1.3'],
+            [group: 'net.freeutils', name: 'jcharset', version: '2.1'],
+            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.11'],
+            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.11'],
+            [group: 'org.apache.james', name: 'apache-mime4j-storage', version: '0.8.11'],
+            [group: 'org.apache.james', name: 'apache-mime4j-mbox-iterator', version: '0.8.11'],
+            [group: 'commons-codec', name: 'commons-codec', version: '1.17.1'],
+            [group: 'commons-io', name: 'commons-io', version: '2.18.0'],
+            [group: 'org.apache.commons', name: 'commons-configuration2', version: '2.11.0'],
+            [group: 'ch.qos.logback', name: 'logback-core', version: '1.5.12'],
+            [group: 'org.slf4j', name: 'slf4j-api', version: '2.0.16'],
+            [group: 'org.apache.commons', name: 'commons-collections4', version: '4.5.0-M2'],
+            [group: 'com.google.guava', name: 'guava', version: '33.3.1-jre'])
+    testCompileOnly(
+            [group: 'org.apache.commons', name: 'commons-configuration2', version: '2.11.0'],
+            [group: 'jakarta.mail', name: 'jakarta.mail-api', version: '2.1.3'],
+            [group: 'org.mockito', name: 'mockito-core', version: '5.14.2'],
+            [group: 'commons-codec', name: 'commons-codec', version: '1.17.1'],
+            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.11'],
+            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.11'],
+            [group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.16'],
+            [group: 'org.testng', name: 'testng', version: '7.10.2']
     )
-    testCompileOnly([group: 'org.testng', name: 'testng', version: '6.11'],
-            [group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
-            [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'])
 }
 
 test {
@@ -48,10 +53,8 @@ test {
 
 publishing {
     publications {
-        binaryAndSources(MavenPublication) {
-            from components.java
-            artifact sourcesJar
-
+        library(MavenPublication) {
+            artifact jar
             artifactId = "email-mime-parser"
             group = "com.predell"
         }

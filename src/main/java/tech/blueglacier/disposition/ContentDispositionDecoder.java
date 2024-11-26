@@ -1,7 +1,6 @@
 package tech.blueglacier.disposition;
 
 import tech.blueglacier.Common;
-import com.sun.mail.util.PropUtil;
 import org.apache.james.mime4j.MimeException;
 import org.apache.james.mime4j.util.CharsetUtil;
 
@@ -11,48 +10,31 @@ import java.util.Map;
 import java.util.Set;
 
 public class ContentDispositionDecoder {
-	private static boolean decodeParametersStrict = PropUtil.getBooleanSystemProperty("mail.mime.decodeparameters.strict", false);
 
 	private static ContentDispositionHeaderValue decodeContentDisposition(
 			String headerValue) throws MimeException {
 		ContentDispositionHeaderValue contentDispositionHeaderValue = new ContentDispositionHeaderValue();
 		contentDispositionHeaderValue.setValue(headerValue);
-		try {
-			int i = headerValue.indexOf('\'');
-			if (i <= 0) {
-				if (decodeParametersStrict) {
-					throw new MimeException(
-							"Missing charset in encoded value: " + headerValue);
-				}
-				return contentDispositionHeaderValue;
-			}
-			
-			String charset = headerValue.substring(0, i);
-			charset = Common.getFallbackCharset(charset);
-			if (CharsetUtil.lookup(charset) == null) {
-				return contentDispositionHeaderValue;
-			}	
-			
-			int li = headerValue.indexOf('\'', i + 1);
-			if (li < 0) {
-				if (decodeParametersStrict) {
-					throw new MimeException(
-							"Missing language in encoded value: " + headerValue);
-				}
-				return contentDispositionHeaderValue;
-			}
-			headerValue = headerValue.substring(li + 1);
-			contentDispositionHeaderValue.setCharset(charset);
-			contentDispositionHeaderValue.setValue(decodeBytes(headerValue, charset));
-		} catch (NumberFormatException nex) {
-			if (decodeParametersStrict) {
-				throw new MimeException(nex);
-			}
-		} catch (StringIndexOutOfBoundsException ex) {
-			if (decodeParametersStrict) {
-				throw new MimeException(ex);
-			}
+
+		int i = headerValue.indexOf('\'');
+		if (i <= 0) {
+			return contentDispositionHeaderValue;
 		}
+
+		String charset = headerValue.substring(0, i);
+		charset = Common.getFallbackCharset(charset);
+		if (CharsetUtil.lookup(charset) == null) {
+			return contentDispositionHeaderValue;
+		}
+
+		int li = headerValue.indexOf('\'', i + 1);
+		if (li < 0) {
+			return contentDispositionHeaderValue;
+		}
+		headerValue = headerValue.substring(li + 1);
+		contentDispositionHeaderValue.setCharset(charset);
+		contentDispositionHeaderValue.setValue(decodeBytes(headerValue, charset));
+
 		return contentDispositionHeaderValue;
 	}
 
@@ -72,7 +54,7 @@ public class ContentDispositionDecoder {
 			b[(bi++)] = (byte) c;
 			temp = bi;
 		}
-		
+
 		String str;
 		try {
 			str = new String(b, 0, temp, charset);
@@ -87,17 +69,20 @@ public class ContentDispositionDecoder {
 	 */
 	private static class ContentDispositionHeaderValue {
 		private String value;
-		private String charset;	
+		private String charset;
 
 		public String getValue() {
 			return value;
 		}
+
 		public void setValue(String value) {
 			this.value = value;
 		}
+
 		public String getCharset() {
 			return charset;
-	}
+		}
+
 		public void setCharset(String charset) {
 			this.charset = charset;
 		}
@@ -122,7 +107,7 @@ public class ContentDispositionDecoder {
 		}
 		return fileName;
 	}
-	
+
 	private static String[] getSortedStringArray(Object[] objArray) {
 		String[] strArray = new String[objArray.length];
 		for (int i = 0; i < objArray.length; i++) {

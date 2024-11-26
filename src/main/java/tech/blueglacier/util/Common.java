@@ -1,8 +1,8 @@
 package tech.blueglacier.util;
 
+import org.apache.commons.lang3.StringUtils;
 import tech.blueglacier.disposition.ContentDispositionDecoder;
 import tech.blueglacier.configuration.AppConfig;
-import org.apache.commons.lang.StringUtils;
 import org.apache.james.mime4j.MimeException;
 import org.apache.james.mime4j.codec.DecodeMonitor;
 import org.apache.james.mime4j.message.MaximalBodyDescriptor;
