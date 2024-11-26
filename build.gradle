@@ -1,16 +1,22 @@
-group 'tech.blueglacier'
-version '1.0.5'
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
 
-apply plugin: 'java'
-
-sourceCompatibility = 1.8
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withJavadocJar()
+    withSourcesJar()
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile([group: 'javax.mail', name: 'mail', version: '1.4.7'],
+    compileOnly([group: 'javax.mail', name: 'mail', version: '1.4.7'],
             [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
             [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.0'],
             [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.0'],
@@ -25,7 +31,7 @@ dependencies {
             [group: 'commons-collections', name: 'commons-collections', version: '3.2.2'],
             [group: 'com.google.guava', name: 'guava', version: '23.6-jre']
     )
-    testCompile([group: 'org.testng', name: 'testng', version: '6.11'],
+    testCompileOnly([group: 'org.testng', name: 'testng', version: '6.11'],
             [group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
             [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'])
 }
@@ -40,18 +46,24 @@ test {
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError";
 }
 
+publishing {
+    publications {
+        binaryAndSources(MavenPublication) {
+            from components.java
+            artifact sourcesJar
 
-task cleanDownloadedDependencies(type: Delete) {
-    delete fileTree('dependencies')
-    delete file('dependencies')
-}
-
-task copyDependencies(type: Copy) {
-    dependsOn cleanDownloadedDependencies
-
-    from configurations.compile
-    into 'dependencies'
-
-    from configurations.testCompile
-    into 'dependencies'
+            artifactId = "email-mime-parser"
+            group = "com.predell"
+        }
+    }
+    repositories {
+        maven {
+            name = "OSSRH"
+            url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+            credentials {
+                username = System.getenv("MAVEN_USERNAME")
+                password = System.getenv("MAVEN_PASSWORD")
+            }
+        }
+    }
 }
