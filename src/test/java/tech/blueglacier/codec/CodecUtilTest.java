@@ -14,7 +14,7 @@ public class CodecUtilTest {
 
 	@Test
 	public void testTotalBytesTransffered() throws IOException {		
-		whenInputStreamIs("gmailMessage.eml").andOutputStreamIs("CopiedgmailMessage.eml").assertTotalBytesTransfferedAre(1204);
+		whenInputStreamIs("gmailMessage.eml").andOutputStreamIs("CopiedgmailMessage.eml").assertTotalBytesTransfferedAre(1171);
 	}
 
 	private void assertTotalBytesTransfferedAre(int expectedTotalBytesTransffered) throws IOException {

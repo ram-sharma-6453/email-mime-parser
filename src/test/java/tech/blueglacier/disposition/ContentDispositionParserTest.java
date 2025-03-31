@@ -24,7 +24,7 @@ public class ContentDispositionParserTest {
 	}
 	
 	private String generateCheckSum(String plainText) throws IOException {
-		return DigestUtils.shaHex(plainText);
+		return DigestUtils.sha1Hex(plainText);
 	}
 
 	private void assertDecodedFileString(String plainFileNameChecksum) throws IOException {

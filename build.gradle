@@ -1,33 +1,33 @@
-group 'tech.blueglacier'
-version '1.0.5'
+group = 'tech.blueglacier'
+version = '1.0.6'
 
 apply plugin: 'java'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile([group: 'javax.mail', name: 'mail', version: '1.4.7'],
-            [group: 'net.freeutils', name: 'jcharset', version: '2.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-storage', version: '0.8.0'],
-            [group: 'org.apache.james', name: 'apache-mime4j-mbox-iterator', version: '0.8.0'],
-            [group: 'commons-codec', name: 'commons-codec', version: '1.10'],
-            [group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'],
-            [group: 'commons-io', name: 'commons-io', version: '2.5'],
+    implementation([group: 'javax.mail', name: 'mail', version: '1.5.0-b01'],
+            [group: 'net.freeutils', name: 'jcharset', version: '2.1'],
+            [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.6'],
+            [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.6'],
+            [group: 'org.apache.james', name: 'apache-mime4j-storage', version: '0.8.6'],
+            [group: 'org.apache.james', name: 'apache-mime4j-mbox-iterator', version: '0.8.6'],
+            [group: 'commons-codec', name: 'commons-codec', version: '1.18.0'],
+            [group: 'org.apache.commons', name: 'commons-lang3', version: '3.17.0'],
+            [group: 'commons-io', name: 'commons-io', version: '2.18.0'],
             [group: 'commons-configuration', name: 'commons-configuration', version: '1.10'],
-            [group: 'ch.qos.logback', name: 'logback-core', version: '1.2.1'],
-            [group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'],
+            [group: 'ch.qos.logback', name: 'logback-core', version: '1.5.18'],
+            [group: 'org.slf4j', name: 'slf4j-api', version: '2.0.17'],
+            [group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.17'],
             [group: 'commons-collections', name: 'commons-collections', version: '3.2.2'],
-            [group: 'com.google.guava', name: 'guava', version: '23.6-jre']
+            [group: 'com.google.guava', name: 'guava', version: '33.4.6-jre']
     )
-    testCompile([group: 'org.testng', name: 'testng', version: '6.11'],
-            [group: 'org.mockito', name: 'mockito-all', version: '1.10.19'],
-            [group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'])
+    testImplementation([group: 'org.testng', name: 'testng', version: '7.11.0'],
+            [group: 'org.mockito', name: 'mockito-core', version: '5.16.1'],
+            [group: 'org.slf4j', name: 'slf4j-api', version: '2.0.17'],
+            [group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.17'])
 }
 
 test {
@@ -40,18 +40,11 @@ test {
     testLogging.events "started", "passed", "skipped", "failed", "standardOut", "standardError";
 }
 
-
-task cleanDownloadedDependencies(type: Delete) {
-    delete fileTree('dependencies')
-    delete file('dependencies')
+task copyDependencies(type: Copy) {
+    from configurations.runtimeClasspath
+    into 'build/dependencies'
 }
 
-task copyDependencies(type: Copy) {
-    dependsOn cleanDownloadedDependencies
-
-    from configurations.compile
-    into 'dependencies'
-
-    from configurations.testCompile
-    into 'dependencies'
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:deprecation"
 }

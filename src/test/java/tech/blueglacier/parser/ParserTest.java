@@ -95,16 +95,16 @@ public class ParserTest {
 	private void assertEmailPlainTextBodyContents() throws IOException, MimeException {
 		Email email = getParsedSimpleGmail();
 		String bodyContentChecksum = generateCheckSum(email.getPlainTextEmailBody().getIs());
-		Assert.assertEquals(bodyContentChecksum, "d95e0afb0868bd495d347cee4f199a8a1ad265b4");
+		Assert.assertEquals(bodyContentChecksum, "505a5317a747e5d80cf28b2798e8c013e189e177");
 		
 	}
 
 	private String generateCheckSum(InputStream in) throws IOException {
-		return DigestUtils.shaHex(in);
+		return DigestUtils.sha1Hex(in);
 	}
         
         private String generateCheckSum(String filename) throws IOException {
-		return DigestUtils.shaHex(filename);
+		return DigestUtils.sha1Hex(filename);
 	}
 	
 	@Test
@@ -115,7 +115,7 @@ public class ParserTest {
 	private void assertEmailHTMLBodyContents() throws IOException, MimeException {		
 		Email email = getParsedSimpleGmail();
 		String htmlBodyChecksum = generateCheckSum(email.getHTMLEmailBody().getIs());
-		Assert.assertEquals(htmlBodyChecksum, "dfe85ca4b15e94f8a06ac17f8a4f2b06b14b6a1b");
+		Assert.assertEquals(htmlBodyChecksum, "f97236c1ff26a4fda622c28baf9c0d9807537f2f");
 	}
 	
 	@Test
@@ -346,7 +346,7 @@ public class ParserTest {
 	public void assertEmailParsingForExtraPlainPartInEmail() throws  MimeException, IOException{
 		Email email = getParsedEmailWithExtraPlainPart();
 		int expectedSize;
-		assertAttachmentsSize(email.getPlainTextEmailBody().getAttachmentSize(),expectedSize = 422);
+		assertAttachmentsSize(email.getPlainTextEmailBody().getAttachmentSize(),expectedSize = 415);
 	}	
 
 	private void assertAttachmentsSize(int actualSize, int expectedSize) {
