@@ -22,7 +22,7 @@ For maven project :
 For gradle project :
 
 ```
-compile([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.5'])
+implementation([group: 'tech.blueglacier', name: 'email-mime-parser', version: '1.0.5'])
 ```
 
 **Sample code :**
@@ -53,5 +53,7 @@ String from = email.getFromEmailHeaderValue();
 
 For more info check the test case file **'src\test\java\tech\blueglacier\parser\ParserTest.java'**
 
+**Code compilation requirements**
 
+Gradle 8.13
 
