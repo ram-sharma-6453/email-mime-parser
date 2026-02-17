@@ -5,7 +5,7 @@ import org.apache.james.mime4j.MimeException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.mail.internet.ParseException;
+import jakarta.mail.internet.ParseException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

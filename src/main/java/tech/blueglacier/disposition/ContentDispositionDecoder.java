@@ -1,7 +1,7 @@
 package tech.blueglacier.disposition;
 
 import tech.blueglacier.Common;
-import com.sun.mail.util.PropUtil;
+import org.eclipse.angus.mail.util.PropUtil;
 import org.apache.james.mime4j.MimeException;
 import org.apache.james.mime4j.util.CharsetUtil;
 

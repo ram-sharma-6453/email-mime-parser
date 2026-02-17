@@ -10,8 +10,10 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
-    implementation([group: 'javax.mail', name: 'mail', version: '1.5.0-b01'],
+    implementation(
+            [group: 'org.eclipse.angus', name: 'angus-mail', version: '2.0.3'],
             [group: 'net.freeutils', name: 'jcharset', version: '2.1'],
             [group: 'org.apache.james', name: 'apache-mime4j-core', version: '0.8.6'],
             [group: 'org.apache.james', name: 'apache-mime4j-dom', version: '0.8.6'],
