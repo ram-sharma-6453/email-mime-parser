@@ -1,7 +1,10 @@
-group = 'tech.blueglacier'
-version = '1.0.6'
+plugins {
+    id 'java'
+    id "com.vanniktech.maven.publish" version "0.36.0"
+}
 
-apply plugin: 'java'
+group = 'tech.blueglacier'
+version = '1.0.7'
 
 repositories {
     mavenCentral()
@@ -47,3 +50,45 @@ task copyDependencies(type: Copy) {
 tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:deprecation"
 }
+
+mavenPublishing {
+    coordinates("tech.blueglacier", "email-mime-parser", "1.0.7")
+
+    pom {
+        name = "email-mime-parser"
+        description = "A mime4j based simplified email mime parser for java."
+        inceptionYear = "2016"
+        url = "https://github.com/ram-sharma-6453/email-mime-parser"
+        licenses {
+            license {
+                name = "The Apache License, Version 2.0"
+                url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        }
+        developers {
+            developer {
+                id = "ram-sharma-6453"
+                name = "ram-sharma-6453"
+                url = "https://github.com/ram-sharma-6453"
+            }
+        }
+        scm {
+            url = "https://github.com/ram-sharma-6453/email-mime-parser"
+            connection = "scm:git:git://github.com/ram-sharma-6453/email-mime-parser.git"
+            developerConnection = "scm:git:ssh://git@github.com/ram-sharma-6453/email-mime-parser.git"
+        }
+    }
+}
+
+javadoc {
+    if (JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
+    }
+}
+
+mavenPublishing {
+    publishToMavenCentral()
+    signAllPublications()
+}
+
